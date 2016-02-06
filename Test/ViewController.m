@@ -159,7 +159,7 @@
             if (((CGRectGetMinX(blocks1.frame)<= position.x) && (position.x<= CGRectGetMaxX(blocks1.frame)))){
                        [UIView setAnimationDuration:0.3f];
                         CGRect frame = blocks1.frame;
-                        frame.origin.y = position.y;
+                        frame.origin.y = position.y - 2.25;
                         frame.size.height = screenHeight/2 - position.y;
                         blocks1.frame = frame;
                         [UIView commitAnimations];
@@ -171,7 +171,7 @@
                 if (((CGRectGetMinX(blocks2.frame)<= position.x) && (position.x<= CGRectGetMaxX(blocks2.frame)))){
                         [UIView setAnimationDuration:0.3f];
                         CGRect frame = blocks2.frame;
-                        frame.origin.y = position.y;
+                        frame.origin.y = position.y + 2.25;
                         frame.size.height = screenHeight/2 - position.y;
                         blocks2.frame = frame;
                         [UIView commitAnimations];
